@@ -15,8 +15,7 @@ setup(
         'flask-sqlalchemy',
         'psycopg2',
         'passlib',
-        'sqlalchemy_utils',
-        'docker-compose'
+        'sqlalchemy_utils'
     ],
     test_require=[
         'pytest',
