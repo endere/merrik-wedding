@@ -1,1 +1,1 @@
-web: gunicorn app:server
+web: gunicorn wedding_site/app:app
