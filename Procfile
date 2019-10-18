@@ -1,0 +1,1 @@
+web: gunicorn -c gunicorn.conf wedding_site.app:app --log-level=info

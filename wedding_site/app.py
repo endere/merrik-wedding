@@ -2,6 +2,8 @@ from flask import Flask
 from wedding_site.routes.routes import routes
 
 app = Flask(__name__, template_folder='static/templates')
+print('hello world!!!')
+
 
 app.register_blueprint(routes)
 
