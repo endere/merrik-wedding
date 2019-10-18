@@ -1,10 +1,9 @@
-from flask import Flask, render_template
+from flask import Flask
+from wedding_site.routes.routes import routes
 
 app = Flask(__name__, template_folder='static/templates')
 
-@app.route('/')
-def hello_world(): 
-  return render_template('base.html', message='Hello Wedding!')
+app.register_blueprint(routes)
 
 if __name__ == '__main__': 
   app.run(host='0.0.0.0', debug=True)  
