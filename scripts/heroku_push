@@ -1,3 +1,0 @@
-docker build -t endere/merrick_wedding:latest .
-heroku container:push web --app merrick-wedding
-heroku container:release --app merrick-wedding web

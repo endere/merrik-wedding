@@ -1,5 +1,0 @@
-#!/bin/bash
-docker build -t endere/merrick_wedding:latest .
-source ./scripts/secrets
-docker-compose down
-docker-compose up merrick_wedding
