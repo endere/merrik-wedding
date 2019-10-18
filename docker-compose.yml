@@ -1,0 +1,16 @@
+version: "3"
+services:
+  merrick_wedding:
+    container_name: merrick_wedding
+    image: endere/merrick_wedding:latest
+    ports: 
+      - "5903:5903"
+    environment:
+      - DATABASE_URL=$DATABASE_URL
+      - DATABASE_DB=$DATABASE_DB
+      - DATABASE_USER=$DATABASE_USER
+      - DATABASE_PASSWORD=$DATABASE_PASSWORD
+      - PORT=$PORT
+      - PYTHONUNBUFFERED=TRUE
+    volumes:
+      - ./:/app
