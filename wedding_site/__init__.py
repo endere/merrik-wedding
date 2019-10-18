@@ -8,6 +8,3 @@ from wedding_site import routes, models
 app = Flask(__name__)
 app.config['SECRET_KEY'] = str(uuid.uuid4())
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
-
-
-
