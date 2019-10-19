@@ -1,5 +1,4 @@
 from wedding_site import db
-from .user import user
 
 class RSVP(db.Model): 
   id = db.Column(db.Integer, primary_key=True)
