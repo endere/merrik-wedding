@@ -1,7 +1,14 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, send_from_directory
 
 routes = Blueprint('routes', __name__, template_folder='static/templates')
 
 @routes.route('/')
 def hello_world(): 
-  return render_template('base.html', message='Hello Wedding test!')
+    print('cooooo?')
+    return render_template('index.html')
+
+
+
+@routes.route('/<path:path>')
+def catch_all(path):
+    return send_from_directory('static/templates', path)

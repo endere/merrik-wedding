@@ -1,1 +1,1 @@
-gunicorn -c gunicorn.conf wedding_site:app --log-level=info --reload
+gunicorn -c gunicorn.conf wedding_site:app --log-level=debug --reload
