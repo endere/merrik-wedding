@@ -4,11 +4,11 @@ routes = Blueprint('routes', __name__, template_folder='static/templates')
 
 @routes.route('/')
 def hello_world(): 
-    print('cooooo?')
-    return render_template('index.html')
+    return render_template('home.html')
 
 
 
 @routes.route('/<path:path>')
 def catch_all(path):
     return send_from_directory('static/templates', path)
+          
