@@ -108,6 +108,8 @@ client.py
 
 .DS_Store
 
+.vscode/
+
 *.cfg
 
 secrets
