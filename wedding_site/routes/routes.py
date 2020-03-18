@@ -17,10 +17,8 @@ def accomodation():
     return render_template('accomodation.html')
 
 
-
-
-
 @routes.route('/<path:path>')
 def catch_all(path):
+    """Catch all for the base template path. All other template fragments are built on this."""
     return send_from_directory('static/templates', path)
           
