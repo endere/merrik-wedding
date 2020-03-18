@@ -1,5 +1,5 @@
-from flask import Blueprint, render_template, send_from_directory
-
+from flask import Blueprint, render_template, send_from_directory, request
+from wedding_site.models.rsvp import RSVP, db
 routes = Blueprint('routes', __name__, template_folder='static/templates')
 
 @routes.route('/')
@@ -15,6 +15,28 @@ def venue():
 @routes.route('/accomodation')
 def accomodation(): 
     return render_template('accomodation.html')
+
+
+
+@routes.route('/rsvp')
+def rsvp(): 
+    return render_template('rsvp.html')
+
+
+
+@routes.route('/confirm-rsvp', methods=["POST"])
+def confirm_rsvp(): 
+    rsvp = RSVP.query.filter_by(email=request.values['email']).first()
+    if not rsvp:
+        rsvp = RSVP(name=request.values['name'], email=request.values['email'], number_of_guests=request.values['number_of_guests'], meal_preference=request.values['meal_preference'])
+        db.session.add(rsvp)
+    else:
+        rsvp.name = request.values['name']
+        rsvp.number_of_guests = request.values['number_of_guests']
+        rsvp.meal_preference = request.values['meal_preference']
+    db.session.commit()
+    return render_template('generic.html', title='rsvp successful', message='Your rsvp has been submitted! Thank you!')
+
 
 
 @routes.route('/<path:path>')

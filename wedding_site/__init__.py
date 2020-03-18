@@ -3,7 +3,6 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 import uuid
 import os
-from wedding_site.routes.routes import routes
 from importlib import import_module
 
 
@@ -15,5 +14,6 @@ db = SQLAlchemy(app)
 for module_name in ['post', 'rsvp', 'user']:
     import_module(f'wedding_site.models.{module_name}', package=__name__)
 
+from wedding_site.routes.routes import routes
 app.register_blueprint(routes)
 db.create_all()
