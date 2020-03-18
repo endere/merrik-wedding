@@ -21,11 +21,11 @@
 }
 
 .layout_body{
-  background-image: url("/wedding_site/static/templates/img/backgrounds/ivan-mercado-sIt6V8ESCks-unsplash.jpg"), url("/wedding_site/static/templates/img/backgrounds/jennifer-pajula-7gtx_iUFABo-unsplash.jpg");
+  background-image: url(/img/backgrounds/ivan-mercado-sIt6V8ESCks-unsplash.jpg), url(/wedding_site/static/templates/img/backgrounds/jennifer-pajula-7gtx_iUFABo-unsplash.jpg);
   background-color: lightSteelBlue; 
   height: 100%, 100%; 
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
-
+  
 }
