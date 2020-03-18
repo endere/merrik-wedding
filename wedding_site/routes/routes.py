@@ -20,7 +20,7 @@ def accomodation():
 
 
 
-# @routes.route('/<path:path>')
-# def catch_all(path):
-#     return send_from_directory('static/templates', path)
-#           
+@routes.route('/<path:path>')
+def catch_all(path):
+    return send_from_directory('static/templates', path)
+          
