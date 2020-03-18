@@ -8,10 +8,24 @@
   padding-right: 20px;
 }
 
-
-
-
 #names {
   margin-bottom: -10px;
 }
 
+.logo {
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-top: 70px;
+  width: 30px;
+  height: 30px;
+}
+
+.layout_body{
+  background-image: url(/img/backgrounds/ivan-mercado-sIt6V8ESCks-unsplash.jpg), url(/wedding_site/static/templates/img/backgrounds/jennifer-pajula-7gtx_iUFABo-unsplash.jpg);
+  background-color: lightSteelBlue; 
+  height: 100%, 100%; 
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  
+}
