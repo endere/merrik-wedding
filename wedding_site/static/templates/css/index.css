@@ -21,11 +21,11 @@
 }
 
 .layout_body{
-  background-image: url(/img/backgrounds/ivan-mercado-sIt6V8ESCks-unsplash.jpg), url(/wedding_site/static/templates/img/backgrounds/jennifer-pajula-7gtx_iUFABo-unsplash.jpg);
+  background: url(/img/backgrounds/mathew-macquarrie-KFdIgwm8HTs-unsplash.jpg), url(/img/backgrounds/pawel-czerwinski-suLgJZ1edT4-unsplash.jpg);
   background-color: lightSteelBlue; 
   height: 100%, 100%; 
-  background-position: center, center;
+  background-position: bottom, center;
   background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
-  
+  background-size: 100%, cover;
+  background-blend-mode: overlay;
 }
