@@ -5,7 +5,6 @@ import uuid
 import os
 from importlib import import_module
 
-
 app = Flask(__name__, template_folder='static/templates')
 app.config['SECRET_KEY'] = str(uuid.uuid4())
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
