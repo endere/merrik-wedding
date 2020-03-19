@@ -20,14 +20,19 @@
   height: 20px;
 }
 
-.layout_body{
+html{
   background: url(/img/backgrounds/mathew-macquarrie-KFdIgwm8HTs-unsplash.jpg), url(/img/backgrounds/pawel-czerwinski-suLgJZ1edT4-unsplash.jpg);
   background-color: lightSteelBlue; 
-  height: 100%, 100%; 
   background-position: bottom, center;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 100%, cover;
+  background-repeat: repeat-y, no-repeat;
+  background-size: cover, cover;
   background-blend-mode: overlay;
+
+  
+}
+
+.layout_body{
+  background-color: transparent;
 }
 
 .p_120 {
