@@ -1,23 +1,23 @@
 
 #names-box {
-  text-shadow: 1px 1px #404040;
+  text-shadow: .01vh .01vh #404040;
   color: #6f6fdc;
   position:absolute;
-  bottom:100px;
-  right:0;
-  padding-right: 20px;
+  top:5vh;
+  right:0vh;
+  padding-right: .2vh;
 }
 
 #names {
-  margin-bottom: -10px;
+  margin-bottom: -.1vh;
 }
 
 .logo {
-  padding-bottom: 30px;
-  padding-left: 30px;
-  padding-top: 70px;
-  width: 20px;
-  height: 20px;
+  padding-bottom: .3vh;
+  padding-left: .3vh;
+  padding-top: .7vh;
+  width: .2vh;
+  height: .2vh;
 }
 
 html{
@@ -37,7 +37,7 @@ html{
 
 .p_120 {
     color: black;
-    text-shadow: .5px .5px #404040;
+    text-shadow: .005vh .005vh #404040;
     font-size: 20px;
 }
 
@@ -65,4 +65,8 @@ html{
     max-height: 100%;
     max-width: 100%;
 
+}
+
+p {
+  margin-top: 5vh;
 }
