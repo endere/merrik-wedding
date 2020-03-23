@@ -1,3 +1,8 @@
+*{
+    /*outline: .01vh solid rgb(61, 61, 63);*/
+    /*box-shadow: .01vh .02vh solid rgba(61, 61, 63, 0.596); */
+}
+
 body{
     background-image: url('/img/backgrounds/pawel-czerwinski-suLgJZ1edT4-unsplash.jpg'),  url('/img/backgrounds/mathew-macquarrie-KFdIgwm8HTs-unsplash.jpg');
     background-color: rgb(38, 38, 92);
@@ -5,4 +10,17 @@ body{
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-blend-mode: screen;
+}
+
+div{
+    outline: .01vh solid rgb(61, 61, 63);
+    box-shadow: .01vh .02vh solid rgba(61, 61, 63, 0.596);
+}
+
+h1, h2{
+    font-family: 'Calligraffitti', cursive;
+}
+
+h3, ul, div{
+    font-family: 'Raleway', sans-serif;
 }
