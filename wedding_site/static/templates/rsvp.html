@@ -4,31 +4,32 @@ RSVP
 {% endblock %}
 {% block body %}
 <!--================Reservation Form Area =================-->
-        <section class="reservation_form_area p_120">
-        	<div class="container">
-        		<div class="res_form_inner">
+        <section>
+        	<div>
+        		<div class='formholder'>
         			<div class="form_title">
         				<h2>Reservation Form</h2>
-        				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua.</p>
+        				<p>Please fill out this form for each guest in your party.</p>
         			</div>
-        			<form class="reservation_form row" action="/confirm-rsvp" method="post" id="contactForm" novalidate="novalidate">
-						<div class="form-group col-lg-12">
+        			<form action="/confirm-rsvp" method="post">
+						<div>
 							<input type="text" class="form-control" id="name" name="name" placeholder="Name">
 						</div>
-						<div class="form-group col-lg-12">
-							<input type="email" class="form-control" id="email" name="email" placeholder="Email address">
+						<div>
+							<input type="text" class="form-control" id="email" name="email" placeholder="Email address">
 						</div>
-						<div class="form-group col-lg-12">
+<!-- 						<div>
+							<input type="text" class="form-control" id="numguests" name="number_of_guests" placeholder="Number of guests">
+						</div> -->
+						<div>
 							<select class="res_select" name='meal_preference'>
+								<option>meal preference</option>
 								<option value="steak">steak</option>
 								<option value="beans">beans</option>
 								<option value="vodka">vodka</option>
 							</select>
 						</div> 
-						<div class="form-group col-lg-12">
-							<input type="text" class="form-control" id="numguests" name="number_of_guests" placeholder="Number of guests">
-						</div>
-						<div class="form-group col-lg-12">
+						<div>
 							<button class="btn submit_btn" type="submit" value="submit">Confirm Now</button>
 						</div>
 					</form>
@@ -36,4 +37,10 @@ RSVP
         	</div>
         </section>
         <!--================End Reservation Form Area =================-->
+{% endblock %}
+
+
+
+{% block css %}
+<link rel="stylesheet" href="scss/rsvp.css">
 {% endblock %}

@@ -4,28 +4,18 @@ Venue
 {% endblock %}
 {% block body %}
         <!--================Accomodation Area =================-->
-        <section class="act_area p_120">
-            <div class="container">
-                <div class="row act_inner">
-                        <div class="progress_item venueitem" class="progress_item">
-                            <img class="venueimg" src="img/anderson.jpg" alt="">
-                            <div class="progress_text">
-                                <a class="nav-link" href="https://www.mcmenamins.com/anderson-school"><h4>Mcmenamins Anderson School</h4></a>
-                                <p>A complex of restaurants, hotels, and even a theatre located in Bothell, and only 15 minutes away from the venue. We have reserved a large block of rooms for our out-of-town guests.</p>
-                            </div>
-                        </div>
-
-                        <div class="progress_item venueitem" class="progress_item">
                             <img class="venueimg" src="img/lill.png" alt="">
-                            <div class="progress_text">
+                            <div class='venueblurb'>
                                 <a class="nav-link" href="https://chateaulill.com/"><h4>Chateau Lill</h4></a>
                                 <p>A beautiful rural winery out in Woodinville, Washington. Come join us on the day of our wedding for the ceremony and festivities!</p>
                             </div>
-                        </div>
-                </div>
-            </div>
-        </section>
         <!--================End Accomodation Area =================-->
         
         
+{% endblock %}
+
+
+
+{% block css %}
+<link rel="stylesheet" href="scss/venue.css">
 {% endblock %}
