@@ -1,0 +1,25 @@
+.formholder{
+  width: 50%;
+  height: 40%;
+  margin: auto;
+  padding: 5vh;
+  padding-left: 25vw;
+  text-align: center;
+
+}
+
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
