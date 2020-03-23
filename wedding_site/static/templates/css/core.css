@@ -1,0 +1,8 @@
+body{
+    background-image: url('/img/backgrounds/pawel-czerwinski-suLgJZ1edT4-unsplash.jpg'),  url('/img/backgrounds/mathew-macquarrie-KFdIgwm8HTs-unsplash.jpg');
+    background-color: rgb(38, 38, 92);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-blend-mode: screen;
+}
