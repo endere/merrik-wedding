@@ -9,7 +9,6 @@ RSVP
         		<div class='formholder'>
         			<div class="form_title">
         				<h2>Reservation Form</h2>
-        				<p>Please fill out this form for each guest in your party.</p>
         			</div>
         			<form action="/confirm-rsvp" method="post">
 						<div>
@@ -18,17 +17,12 @@ RSVP
 						<div>
 							<input type="text" class="form-control" id="email" name="email" placeholder="Email address">
 						</div>
-<!-- 						<div>
-							<input type="text" class="form-control" id="numguests" name="number_of_guests" placeholder="Number of guests">
-						</div> -->
 						<div>
-							<select class="res_select" name='meal_preference'>
-								<option>meal preference</option>
-								<option value="steak">steak</option>
-								<option value="beans">beans</option>
-								<option value="vodka">vodka</option>
-							</select>
-						</div> 
+							<input type="text" class="form-control" id="numguests" name="number_of_guests" placeholder="Number of guests">
+						</div>
+						<div>
+							<input type="text" class="form-control" id="dietary_restrictions" name="dietary_restrictions" placeholder="Any dietary restrictions in your party(gluten free, vegan, allergies, etc)">
+						</div>
 						<div>
 							<button class="btn submit_btn" type="submit" value="submit">Confirm Now</button>
 						</div>

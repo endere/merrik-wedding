@@ -23,9 +23,10 @@ def confirm_rsvp():
     rsvp = RSVP.query.filter_by(email=request.values['email']).first()
     if rsvp:
         rsvp.name = request.values['name']
-        rsvp.meal_preference = request.values['meal_preference']
+        rsvp.dietary_restrictions = request.values['dietary_restrictions']
+        rsvp.number_of_guests = request.values['number_of_guests']
     else:
-        rsvp = RSVP(name=request.values['name'], email=request.values['email'], meal_preference=request.values['meal_preference'])
+        rsvp = RSVP(name=request.values['name'], email=request.values['email'], dietary_restrictions=request.values['dietary_restrictions'], number_of_guests=request.values['number_of_guests'])
         db.session.add(rsvp)
     db.session.commit()
     return render_template('generic.html', title='RSVP successful', message='Your RSVP has been submitted! Thank you!')
