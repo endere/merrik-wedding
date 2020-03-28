@@ -48,7 +48,28 @@ li h1 {
 .nav-item:hover{
   background-color: #111;
 }
+.container {
+  position: relative;
+}
 
+#main_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background-color: rgba(51, 51, 51, 0.555);
+}
+
+#names_box {
+  text-shadow: 1px 1px #404040;
+  color: #6f6fdc;
+  padding-right: 8vw;
+  position: absolute;
+  top: 5vh;
+  right: 2vw;
+  font-size: 35px;
+
+}
 /*
 
 .nav-item {
