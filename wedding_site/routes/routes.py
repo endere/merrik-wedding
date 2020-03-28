@@ -10,9 +10,9 @@ def hello_world():
 def venue(): 
     return render_template('venue.html')
 
-@routes.route('/accomodation')
-def accomodation(): 
-    return render_template('accomodation.html')
+@routes.route('/accommodation')
+def accommodation(): 
+    return render_template('accommodation.html')
 
 @routes.route('/rsvp')
 def rsvp(): 
