@@ -22,6 +22,16 @@ li a {
   text-decoration: none;
 }
 
+li h1 {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 0px;
+  margin-top: 6vh;
+  text-decoration: none;
+  font-size: 25px;
+}
+
 /* Change the link color to #111 (black) on hover */
 /* li a:hover {
   background-color: #111;
