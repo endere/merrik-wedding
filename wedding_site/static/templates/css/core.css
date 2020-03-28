@@ -19,3 +19,31 @@ h1, h2{
 h3, ul, div{
     font-family: 'Raleway', sans-serif;
 }
+
+.venudiv{
+    margin-top: 4vh;
+    margin-left: auto;
+    margin-right:auto;
+    background-color: rgba(51, 51, 51, 0.555);
+    height: 70vh;
+    width: 80vw;
+    
+}
+.venueblurb{
+    line-height: 2.5vh;
+    margin: 2vh;
+}
+
+.footer_area{
+    background-color: rgba(51, 51, 51, 0.555);
+    font-size: 1.4vh;
+    color: rgb(185, 184, 184);
+    line-height: 2.3vh; 
+    padding: 1vh;
+}
+
+.rib-footer{
+    margin-left: 47%;
+
+}
+
