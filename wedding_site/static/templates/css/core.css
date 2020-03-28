@@ -1,4 +1,8 @@
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-image: url('/img/backgrounds/pawel-czerwinski-suLgJZ1edT4-unsplash.jpg'),  url('/img/backgrounds/mathew-macquarrie-KFdIgwm8HTs-unsplash.jpg');
     background-color: rgb(38, 38, 92);
@@ -40,6 +44,7 @@ h3, ul, div{
     color: rgb(185, 184, 184);
     line-height: 2.3vh; 
     padding: 1vh;
+    margin-top: 13vh;
 }
 
 .rib-footer{
